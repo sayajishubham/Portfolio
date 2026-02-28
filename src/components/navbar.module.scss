@@ -1,0 +1,176 @@
+/* ============================
+   Breakpoint variables
+============================ */
+$xs: 320px;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+
+/* ============================
+   Base (Mobile First)
+============================ */
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+
+  &.hidden {
+    display: none;
+  }
+
+  &__col {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.4rem 0.75rem;
+    border-radius: 1rem;
+    background: #f5f5f5;
+
+    &-dot {
+      width: 8px;
+      height: 8px;
+      background: #22c55e;
+      border-radius: 50%;
+    }
+
+    a {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: #000;
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+      text-decoration: none;
+    }
+  }
+
+  &__tabs {
+    width: 90%;
+    height: 36px;
+    padding: 0 0.75rem;
+    border-radius: 1rem;
+    background: #f5f5f5;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #000;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+  }
+
+  &__btn {
+    width: 90%;
+    padding: 0.35rem 1rem;
+    border-radius: 1rem;
+    border: 2px solid #000;
+    background: #000;
+    color: #fff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    svg {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+/* ============================
+   Extra Small (320px – 575px)
+============================ */
+@media (min-width: $xs) and (max-width: $sm) {
+  .navbar {
+    &__name a {
+      font-size: 0.8rem;
+    }
+
+    &__tabs {
+      font-size: 0.8rem;
+    }
+  }
+}
+
+/* ============================
+   Small (≥ 576px)
+============================ */
+@media (min-width: $sm) {
+  .navbar {
+    &__tabs {
+      width: 60%;
+    }
+
+    &__btn {
+      width: 60%;
+    }
+  }
+}
+
+/* ============================
+   Medium (≥ 768px)
+============================ */
+@media (min-width: $md) {
+  .navbar {
+    flex-direction: row;
+    height: 5rem;
+    padding: 0;
+
+    &__col {
+      width: 33.333%;
+    }
+
+    &__tabs {
+      width: 160px;
+      height: 40px;
+      font-size: 0.875rem;
+    }
+
+    &__btn {
+      width: 240px;
+      font-size: 0.875rem;
+
+      svg {
+        font-size: 1.5rem;
+      }
+    }
+
+    &__name a {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+/* ============================
+   Large (≥ 992px)
+============================ */
+@media (min-width: $lg) {
+  .navbar {
+    &__tabs {
+      width: 180px;
+    }
+
+    &__btn {
+      width: 260px;
+    }
+  }
+}
