@@ -146,7 +146,7 @@ export default function About() {
         </div>
         <div className="w-[90%] lg:w-[50%]  mx-auto grid place-items-center">
           <img
-            src="src/profile.JPG"
+            src="https://res.cloudinary.com/dkps2avgd/image/upload/v1774531220/myprofile_izyyrs.jpg"
             alt=""
             className=" md:h-[400px] lg:h-[450px] rounded-tr-4xl rounded-bl-4xl"
           />

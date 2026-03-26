@@ -6,7 +6,7 @@ import style from "./style.module.scss";
 const projects = [
   {
     title: "AI Resume Analyzer",
-    stack: "Full-Stack Development",
+    stack: "Full-Stack MERN + AI",
     src: "https://res.cloudinary.com/dkps2avgd/image/upload/v1772284904/resume-cover_dsnjox.png",
     color: "#2dd4bf",
     description: "AI-powered resume analysis and job matching platform",
